@@ -1,0 +1,501 @@
+@font-face {
+    font-family: "coco";
+    font-weight: bold;
+    src: url(Cocogoose-Compressed-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: "cocono";
+    src: url(Cocogoose-Compressed-Light-trial.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'coco';
+}
+
+#immagine_omino{
+    height: 8%;
+    width:4%;
+    border-radius:1000%;
+    position:fixed;
+    left:10px;
+    top: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+#login{
+    height: 30%;
+    width: 70%;
+}
+
+header{
+    background-color: #0051A3;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+}
+
+#logo{
+    height: 81px;
+    width: 146px;
+}
+
+#barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+#barra a{
+    font-size: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#prodotto{
+    position: relative;
+}
+
+#prodotti{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 222px;
+    width: 100px;
+    height: 70px;
+    background-color: #FFD700;
+    border: 2px solid #0051A3;
+    z-index: 1;
+    top: 70px;
+    left: 400px;
+    color: #0051A3;
+}
+
+#prodotti a{
+    color: #0051A3;
+}
+
+#concorso{
+    position: relative;
+}
+
+#vinciconc{
+    font-size: 222px;
+    width: 100px;
+    height: 70px;
+    background-color: #FFD700;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 550px;
+    border: 2px solid #0051A3;
+}
+
+#vinciconc a{
+    color: #0051A3;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    
+}
+#icon img{
+    height: 30%;
+    width: 100%;
+}
+.border_icone{
+    background-color:#FFD700 ;
+    border-radius: 65%;
+    height: 40%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border_icone:hover{
+    background-color: #ffea95;
+}
+
+#imgicon{
+height: 5px;
+width: 10px;
+}
+
+
+#omino-login{
+    display: none;
+    border-radius: 100%;
+    background-color: #FFD700;
+    height: 30px;
+    width: 35px;
+}
+
+#omino-login div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+#menu{
+    display: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 35px;
+    background-color: #FFD700;
+}
+
+#menu div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+#showmenu{
+    background-color: #FFD700;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#showmenu a{
+    color: #0051A3;
+    margin-left: 30px;
+}
+
+#showmenu a:hover{
+    color: white;
+    margin-left: 30px;
+}
+
+#showmenu.hidden{
+    display: none;
+}
+
+#linea_menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #0051A3;
+    width: 0.5%;
+    height: 25%;
+    margin-left: 5%;
+    
+}
+
+#linea_menu2{
+    display: flex;
+    flex-direction: column;
+    background-color: #0051A3;
+    width: 0.5%;
+    height: 30%;
+    margin-left: 5%;
+    
+}
+
+@media (max-width:500px){
+    #barra{
+        display: none;
+    }
+    #icon{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #menu:hover{
+        background-color:#ffea95;
+    }
+
+    #omino-login:hover{
+        background-color:#ffea95;
+    }
+   
+    #omino-login{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+a{
+    text-transform: uppercase;
+    color: #FFD700;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 24px;
+}
+
+#main-preferiti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280%;
+    background-color: #ffea95;
+    padding : 5%;
+}
+
+#main-preferiti h1{
+    font-family: 'coco';
+    font-size: 30px;
+    color: #0051A3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main-preferiti h4{
+    font-family: 'coco';
+    font-size: 15px;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#main-preferiti p{
+    font-family: 'coco';
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.preferiti{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    background-color: #ffea95;
+}
+
+.preferiti img{
+    max-width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 3px solid #0051A3;
+    text-align: center;
+    height: auto;
+    margin: 4%;
+    background-color: white;
+}  
+
+.info{
+    background-color: #0051A3;
+    width: 100%;
+}
+
+
+@media (max-width:500px){
+
+    .preferiti{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ffea95;
+    }
+    
+    #main-preferiti{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1250%;
+        background-color: #ffea95;
+    }
+}
+
+footer{
+    padding: 20px;
+    height: 377px;
+    background-color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    height: 121px;
+    width: 230px;
+    padding: 40px;
+}
+
+footer a{
+padding-top: 20px;
+padding-bottom: 10px;
+color: #0051A3;
+font-size: 20px;
+margin: 10px;
+text-transform: none;
+}
+
+footer p{
+padding-top: 10px;
+color: #0051A3;
+font-size: 16px;
+margin: 10px;
+text-transform: none;
+}
+
+#allinea{
+    display: flex;
+    text-align: center;
+}
+
+.scopri-ricette-font{
+    color: #0051A3;
+    font-family: coco;
+}
+ 
+.sottolinea{
+    text-decoration: underline;
+    color: #0051A3;
+   font-weight: normal;
+   font-family: cocono;
+   
+}
+
+#no_grassetto{
+    font-weight: normal;
+}
+
+#barilla{
+    color: #5D5D5D;
+    font-size: 16px;
+    margin: 10px;
+    text-transform: none;
+
+}
+
+#icone{
+    height: 98px;
+    background-color: #0051A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40%;
+    padding-right: 40%;
+    text-align: center;
+}
+
+.border_icon{
+    background-color: white;
+    border-radius: 60%;
+    height: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.border_icon:hover{
+    background-color: #FFD700;
+}
+
+.border_icon img{
+    height: 80%;
+    width: 90%;
+}
+
+@media (max-width: 500px) {
+
+    .border_icon{
+        background-color: white;
+        border-radius: 60%;
+        height: 35%;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+.hidden{
+    display: none;
+  }
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#modal-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-view.hidden {
+    display: none;
+  }
+  
+  
+#modal-view img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.fa-heart-o{
+    color:#FFD700;
+}
+
+.fa-heart{
+    color:#FFD700;
+}
+
+.mancanza-prodotti{
+    color: #5D5D5D;
+    font-size: 20px;
+    font-family: 'cocono';
+}

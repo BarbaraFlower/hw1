@@ -1,0 +1,878 @@
+@font-face {
+    font-family: "coco";
+    font-weight: bold;
+    src: url(Cocogoose-Compressed-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: "cocono";
+    src: url(Cocogoose-Compressed-Light-trial.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'coco';
+}
+
+#immagine_omino{
+    height: 8%;
+    width:4%;
+    border-radius:1000%;
+    position:fixed;
+    left:10px;
+    top: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+#login{
+    height: 30%;
+    width: 70%;
+}
+
+header{
+    background-color: #0051A3;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+}
+
+#logo{
+    height: 81px;
+    width: 146px;
+}
+
+#barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+#barra a{
+    font-size: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#prodotto{
+    position: relative;
+}
+
+#prodotti{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 222px;
+    width: 100px;
+    height: 70px;
+    background-color: #FFD700;
+    border: 2px solid #0051A3;
+    z-index: 1;
+    top: 70px;
+    left: 400px;
+    color: #0051A3;
+}
+
+#prodotti a{
+    color: #0051A3;
+}
+
+#concorso{
+    position: relative;
+}
+
+#vinciconc{
+    font-size: 222px;
+    width: 100px;
+    height: 70px;
+    background-color: #FFD700;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 550px;
+    border: 2px solid #0051A3;
+}
+
+#vinciconc a{
+    color: #0051A3;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    
+}
+#icon img{
+    height: 30%;
+    width: 100%;
+}
+.border_icone{
+    background-color:#FFD700 ;
+    border-radius: 65%;
+    height: 40%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border_icone:hover{
+    background-color: #ffea95;
+}
+
+#imgicon{
+height: 5px;
+width: 10px;
+}
+
+
+#omino-login{
+    display: none;
+    border-radius: 100%;
+    background-color: #FFD700;
+    height: 30px;
+    width: 35px;
+}
+
+#omino-login div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+#menu{
+    display: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 35px;
+    background-color: #FFD700;
+}
+
+#menu div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+#showmenu{
+    background-color: #FFD700;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#showmenu a{
+    color: #0051A3;
+    margin-left: 30px;
+}
+
+#showmenu a:hover{
+    color: white;
+    margin-left: 30px;
+}
+
+#showmenu.hidden{
+    display: none;
+}
+
+#linea_menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #0051A3;
+    width: 0.5%;
+    height: 25%;
+    margin-left: 5%;
+    
+}
+
+#linea_menu2{
+    display: flex;
+    flex-direction: column;
+    background-color: #0051A3;
+    width: 0.5%;
+    height: 30%;
+    margin-left: 5%;
+    
+}
+
+@media (max-width:500px){
+    #barra{
+        display: none;
+    }
+    #icon{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #menu:hover{
+        background-color:#ffea95;
+    }
+
+    #omino-login:hover{
+        background-color:#ffea95;
+    }
+   
+    #omino-login{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+
+
+/*//////////////////////////////////////////////////*/
+a{
+    text-transform: uppercase;
+    color: #FFD700;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 24px;
+}
+
+#pubblicita_concorso{
+    background-image: url(vincieparti.jpg);
+    height: 573px;
+    background-size: cover;
+    position: relative;
+}
+
+#vinci{
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+}
+
+#vinci2{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #pubblicita_concorso{
+        background-image: url(vincieparti_mobile.webp);
+        height: 713px;
+        background-size: cover;
+        position: relative;
+    }
+
+    #vinci{
+        display: none;
+    }
+
+    #vinci2{
+        display: block;
+        position: absolute;
+        left: 15%;
+         bottom: 30px;
+    }
+}
+
+
+/*//////////////////////////////////////////////////*/
+.scopri{
+    padding: 50px 10px 50px 10px;
+    height: 476px;
+    background-color:  hsl(45, 15%, 95%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'coco';
+}
+
+.scopri h1{
+    font-family: 'coco';
+    color: #0051A3;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 36px; 
+}
+
+.pavesino{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.pavesino img{
+    height: 90%;
+    width: 100%;
+}
+
+
+@media (max-width: 500px) {
+    #immagine_omino{
+        height: 8%;
+        width:7%;
+    }
+
+}
+
+/*//////////////////////////////////////////////////*/
+#ricette{
+    padding: 90px 10px ;
+    height: 800px;
+    background-color: #ffea95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#ricette h1{
+
+    font-family: 'coco';
+    color: #0051A3;;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 36px; 
+    text-align: center;
+}
+
+#container{
+display: flex;
+justify-content: center;
+align-items: start;
+text-align: center;
+gap:  20px;
+}
+
+.descrizione{
+    height:90%;
+    width: 40%;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    background-color: #0051A3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.descrizione img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.descrizione img:hover{
+    transform: scale(1.12);
+}
+
+
+.box{
+    height: 40%;
+}
+
+.descrizione h2{
+    color: #FFD700;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'cocono';
+}
+
+.descrizione p{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'cocono';
+
+}
+
+#nuovaricetta{
+    width: 20%;
+    margin-bottom: 5px;
+    font-family: 'coco';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#ricettadistagione{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 500px) {
+    #nuovaricetta{
+        width: 100%;
+        margin-bottom: 5px;
+        font-family: 'coco';
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    #ricettadistagione{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 32%;
+    }
+    
+}
+@media (max-width: 500px) {
+    #ricette{
+        height: 800px;
+        background-color: #ffea95;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }    
+
+    .descrizione{
+        height:90%;
+        width: 80%;
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        background-color: #0051A3;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    
+
+    .pavesino{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .scopri{
+        height: 4000px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ricette{
+        height: 2700px;
+    }
+}
+
+.button{
+    display: inline-block;
+    width: 40%;
+    background-color: #FFD700;
+    color: #0051A3;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+
+    padding: 20px 0 10px;
+}
+
+.button a{
+    color: #0051A3;
+}
+
+.button2{
+    display: inline-block;
+    background-color: #FFD700;
+    color: #0051A3;
+    border-radius: 15px;
+    padding: 10px 10px 1px 10px;
+    text-align: center;
+}
+
+
+.button2:hover{
+    color: #FFD700;
+    background-color: #0051A3;
+}
+
+.descrizione span{
+    padding: 20px 0 10px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+footer{
+    padding: 20px;
+    height: 377px;
+    background-color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    height: 121px;
+    width: 230px;
+    padding: 40px;
+}
+
+footer a{
+padding-top: 20px;
+padding-bottom: 10px;
+color: #0051A3;
+font-size: 20px;
+margin: 10px;
+text-transform: none;
+}
+
+footer p{
+padding-top: 10px;
+color: #0051A3;
+font-size: 16px;
+margin: 10px;
+text-transform: none;
+}
+
+#allinea{
+    display: flex;
+    text-align: center;
+}
+
+.scopri-ricette-font{
+    color: #0051A3;
+    font-family: coco;
+}
+ 
+.sottolinea{
+    text-decoration: underline;
+    color: #0051A3;
+   font-weight: normal;
+   font-family: cocono;
+   
+}
+
+#no_grassetto{
+    font-weight: normal;
+}
+
+#barilla{
+    color: #5D5D5D;
+    font-size: 16px;
+    margin: 10px;
+    text-transform: none;
+
+}
+
+#icone{
+    height: 98px;
+    background-color: #0051A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40%;
+    padding-right: 40%;
+    text-align: center;
+}
+
+.border_icon{
+    background-color: white;
+    border-radius: 60%;
+    height: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.border_icon:hover{
+    background-color: #FFD700;
+}
+
+.border_icon img{
+    height: 80%;
+    width: 90%;
+}
+
+@media (max-width: 500px) {
+
+    .border_icon{
+        background-color: white;
+        border-radius: 60%;
+        height: 35%;
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+
+#api{
+    display: flex;
+    align-items: center;
+    background-color:  hsl(45, 15%, 95%);
+    color:#0051A3;
+    font-family: 'coco';
+    flex-direction: column;
+}
+
+#api form{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#visualizza_ricette{
+    font-family: 'coco';
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.div_sezione_ricette{
+    display:flex;
+    justify-content: center;
+    font-family: 'coco';
+}
+
+#cerca_ricetta{
+    font-family: 'coco';
+    color: #0051A3;
+  }
+
+
+#submit2{
+    font-family: 'coco';
+    color: #0051A3;
+    border: 2px solid #0051A3;
+}
+
+  #iniziale_id{
+    font-family: sans-serif;
+    color: #0051A3;
+    border: 2px solid #0051A3;
+  }
+
+#visualizza_ricette p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'coco';
+    color:#FFD700;
+    font-size: 20px;
+}
+
+#visualizza_ricette img{
+    height: 225px;
+    width: 320px;
+
+    border: 2px solid #0051A3;
+}
+
+.div_info{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+#modal-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-view.hidden {
+    display: none;
+  }
+  
+  
+#modal-view img {
+    max-height: 100%;
+    max-width: 100%;
+}
+  
+.no-scroll {
+    overflow: hidden;
+}
+/*//////////////////////////////////////////////////*/
+
+#itinerario{
+    font-family: 'coco';
+    background-color: #FFD700;
+    color: #0051A3;
+    border-radius:20%;
+    border-color: #0051A3;
+    border-width: 3px;
+    height: 18%;
+    margin-bottom: 5%;
+}
+
+#itinerario:hover{
+    background-color:#0051A3;
+    color: #FFD700;
+    border-radius:20%;
+    border-color: #0051A3;
+    border-width: 3px;
+}
+
+#travel{
+    display: flex;
+    align-items: center;
+    background-color:#FFD700;
+    color:#0051A3;
+    font-family: 'coco';
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#travel2{
+    display: flex;
+    align-items: center;
+    background-color:#FFD700;
+    color:#0051A3;
+    font-family: 'coco';
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#travel2.hidden{
+    display: none;
+}
+  
+#testo-view {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    color: #0051A3;
+    font-family: sans-serif;
+}
+  
+
+  #citta_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #testo{
+    border: 2px solid #0051A3;
+    background-color: #ffea95;
+  }
+
+  /*//////////////////////////////////////////////////*/
+
+  #podcast-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+  }
+  
+  #podcast-view p {
+    font-family: sans-serif;
+  }
+
+  #podcast-view img {
+    max-width: 100%;
+  }
+
+  .container_ricette{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    background-color: #5D5D5D;
+    border: 2px  #FFD700;
+    border-radius: 6%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container_ricette h4{
+    color: white;
+  }
+
+  #podcast-view a {
+    color: #ffea95;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-transform: none;
+    margin-bottom: 4%;
+  }
+
+  #podcast-view img{
+    width: 70%;
+    margin: 5%;
+    border-radius: 6%;
+  }
+
+  #spotify{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'coco';
+    background-color: #0051A3;
+    color: #FFD700;
+  }
+
+
+  #podcast{
+    font-family: 'coco';
+    color: #0051A3;
+    border: 2px solid #0051A3;
+}
